@@ -49,11 +49,14 @@ namespace ConsoleApp1
             string word = list[0];
             foreach (string s in list)
             {
-                int next = Int32.Parse(s);
-                if (next < min)
+                if (Int32.TryParse(s, out int o))
                 {
-                    min = next;
-                    word = s;
+                    int next = o;
+                    if (next < min)
+                    {
+                        min = next;
+                        word = s;
+                    }
                 }
             }
             return word;

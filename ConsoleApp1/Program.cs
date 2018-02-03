@@ -24,6 +24,7 @@ namespace ConsoleApp1
             else
             {
                 l = 5;
+                Console.Out.WriteLine("Incorrect input, used default value: 5. ");
             }
             List<string> list = p.GetPalindroms(t, l);
             foreach (string x in list)
