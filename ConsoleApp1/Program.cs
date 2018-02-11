@@ -10,8 +10,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Constant c = new Constant();
-            string t = c.Pi();
+            string t = Constant.Pi();
             Console.Out.WriteLine("Our String: ");
             Console.Out.WriteLine(t);
             Console.Out.Write("Write length of palindrom: ");
